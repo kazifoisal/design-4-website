@@ -221,3 +221,142 @@
 .buttons{
     padding: 10px;
 }
+
+.bodyPart_SecondLast{
+  padding: 70px 0px ;
+  position: relative;
+}
+
+
+.textCover{
+  display: flex;
+  justify-content:space-around;
+  gap: 10%;
+  align-items: center;
+  padding: 20px;
+}
+
+.featureCards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7%;
+}
+
+.cards1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+ background: rgba(255, 255, 255, 0.904);
+ padding: 20px;
+
+}
+
+.direction{
+  display: flex;
+  gap: 15px;
+}
+
+.cards1 h1 p{
+  text-align: center;
+}
+
+.img_sideLeft{
+  position: absolute;
+  bottom: 60px;
+}
+.bodyPart_lastPart {
+  position: relative;
+  background-image: url(./assets/5a88989cf8e8eeffdc29691099a68fb261320bfa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 80vh;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.form_table {
+  position: absolute;
+  left: 200px;
+  top: 150px;
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.text_part {
+  width: 50%;
+}
+
+.text_part .first_p {
+  font-size: 20px;
+  padding: 5px 0;
+  color: rgba(189, 31, 23, 1);
+}
+
+.text_part h1 {
+  color: white;
+  font-size: 50px;
+  padding: 5px 0;
+}
+
+.text_part p {
+  font-size: 16px;
+  color: rgba(247, 248, 249, 1);
+  padding: 10px 0;
+}
+
+.form_part {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.first_part,
+.second_part {
+  display: flex;
+  gap: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  width: 150px;
+  padding: 12px 0;
+  background-color: #ffc107;
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0a800;
+}
