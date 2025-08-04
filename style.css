@@ -360,3 +360,57 @@ button {
 button:hover {
   background-color: #e0a800;
 }
+
+.bodyPart_ending{
+  padding: 40px 0px;
+  position: relative;
+}
+
+.box{
+  display: flex;
+ justify-content: center;
+}
+
+.leftText p{
+  font-size: 20px;
+opacity: 87%;
+line-height: 35px;
+
+}
+
+.leftText{
+    max-width: 600px;
+ background: rgba(254, 191, 0, 1);
+    width: 550px;
+  height: 458px;
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  gap: 40%;
+
+}
+.lowerPart{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video img{
+  width: 750px;
+  height: 458px;
+}
+
+.leftImg{
+  position: absolute;
+  top: 20px;
+  height: 303px;
+  width: 307px;
+}
+
+.right_img{
+   position: absolute;
+  right: 20px;
+  bottom: 30%;
+  height: 303px;
+  width: 307px;
+}
