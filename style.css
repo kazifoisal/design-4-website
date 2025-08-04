@@ -379,6 +379,7 @@ line-height: 35px;
 }
 
 .leftText{
+  position: relative;
     max-width: 600px;
  background: rgba(254, 191, 0, 1);
     width: 550px;
@@ -389,10 +390,33 @@ line-height: 35px;
   gap: 40%;
 
 }
+
+.sideStrokeImg{
+position: absolute;
+left: 0px;
+bottom: 30px;
+}
+
+.first_txt{
+  position: relative;
+}
+
+.img_colon{
+  position: absolute;
+  top: -12px;
+  left: -15px;
+}
 .lowerPart{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .video img{
@@ -413,4 +437,237 @@ line-height: 35px;
   bottom: 30%;
   height: 303px;
   width: 307px;
+}
+
+.footer {
+  position: relative;
+  background-image: url(./assets/11308d6ff909efb883f56845dcebe7cdc85a607c.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100vw;
+  color: rgba(255, 255, 255, 1);
+  z-index: 0;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background-color: rgba(0.5, 0.5, 0.5, 0.75); 
+  z-index: 1;
+}
+
+.footer > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.footer_cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cover{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1300px;
+
+}
+
+.card1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+  text-align: center;
+}
+
+.images_icon{
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ margin-top: 10%;
+gap: 30px;
+}
+
+.images_icon img{
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 40px ;
+  height: 40px ;
+  padding: 10px;
+
+}
+
+/* For large screens (Desktops) */
+@media (max-width: 1200px) {
+  .text_section h1 {
+    font-size: 70px;
+  }
+
+  .video img {
+    width: 100%;
+    height: auto;
+  }
+
+  .leftText {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+  }
+
+  .form_table {
+    left: 100px;
+    top: 100px;
+    width: 90%;
+  }
+}
+
+/* For medium devices (Laptops/Tablets) */
+@media (max-width: 992px) {
+  .navBar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text_section h1 {
+    font-size: 50px;
+  }
+
+  .text_section p {
+    font-size: 20px;
+  }
+
+  .bodyInnerPart {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .shoppingCart {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .featureCards {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .textCover {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .form_table {
+    flex-direction: column;
+    left: 5%;
+    top: 50px;
+  }
+
+  .form_part,
+  .text_part {
+    width: 100%;
+  }
+}
+
+/* For small devices (tablets/small phones) */
+@media (max-width: 768px) {
+  .text_section h1 {
+    font-size: 40px;
+  }
+
+  .text_section {
+    top: 20%;
+    left: 5%;
+  }
+
+  .img_section {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .navBar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .footer_cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .images_icon {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .cover {
+    width: 90%;
+  }
+
+  .form_table {
+    width: 95%;
+    left: 2.5%;
+  }
+}
+
+/* For extra small devices (phones) */
+@media (max-width: 576px) {
+  .text_section h1 {
+    font-size: 30px;
+  }
+
+  .text_section p {
+    font-size: 16px;
+  }
+
+  .leftText p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .leftText {
+    padding: 30px;
+  }
+
+  .video img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px;
+  }
+
+  .footer_cards {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
 }
